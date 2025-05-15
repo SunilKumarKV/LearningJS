@@ -38,4 +38,15 @@ function setBackground() {
 
   secondParagraph.style.background = "red";
 
+  //Changeing Text Node
+  const myTextNode = document.createTextNode("World");
+  secondParagraph.appendChild(myTextNode);
+
+  //create New Element
+  const myNewPTagNode = document.createElement("p");
+  myNewPTagNode.firstChild.data = "This is a new Element";
+  myBody.appendChild(myNewPTagNode);
+
+  //Removing nodes with the removeChild(..) method
+  // secondParagraph.removeChild(myTextNode);
 }
