@@ -1,3 +1,4 @@
+//Creating the Table
 function generateTable() {
     //create <table> element and a <tbody> element
     const tbl = document.createElement("table");
@@ -22,9 +23,19 @@ function generateTable() {
     }
 
     // put the <tbody> in the <table>
-  tbl.appendChild(tblBody);
-  // appends <table> into <body>
-  document.body.appendChild(tbl);
-  // sets the border attribute of tbl to '2'
-  tbl.setAttribute("border", "2");
+    tbl.appendChild(tblBody);
+    // appends <table> into <body>
+    document.body.appendChild(tbl);
+    // sets the border attribute of tbl to '2'
+    tbl.setAttribute("border", "2");
+}
+
+
+//Setting the background color of a paragraph
+function setBackground() {
+  const paragraph = document.getElementsByTagName("p");
+  const secondParagraph = paragraph[1];
+
+  secondParagraph.style.background = "red";
+
 }
