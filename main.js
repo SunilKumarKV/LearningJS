@@ -1,4 +1,4 @@
-function generateText() {
+function generateTable() {
     //create <table> element and a <tbody> element
     const tbl = document.createElement("table");
     const tblBody = document.createElement("tbody");
